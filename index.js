@@ -7,8 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const results = [];
-const csvFilePath =
-  "C:\\Users\\Admin\\Documents\\Pai_Brothers_Hourly_report_Main_Incomer_Sun_Jan_01_2023_to_Wed_Nov.csv";
+const csvFilePath = "Pai_Brothers_Hourly_report_Main_Incomer_Sun_Jan_01_2023_to_Wed_Nov.csv";
 
 fs.createReadStream(csvFilePath)
   .pipe(csv())
